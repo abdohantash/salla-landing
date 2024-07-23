@@ -23846,7 +23846,7 @@ fieldset:disabled .btn {
   }
 
   .pb-md-8 {
-    padding-bottom: 5rem !important
+    /* padding-bottom: 5rem !important; */
   }
 
   .pb-md-9 {
@@ -24868,7 +24868,7 @@ fieldset:disabled .btn {
   }
 
   .mt-lg-n5 {
-    margin-top: -1.875rem !important
+    margin-top: -1.875rem !important;
   }
 
   .mt-lg-n6 {
@@ -25354,7 +25354,7 @@ fieldset:disabled .btn {
   }
 
   .pb-lg-6 {
-    padding-bottom: 3rem !important
+    /* padding-bottom: 3rem !important; */
   }
 
   .pb-lg-7 {
@@ -35885,7 +35885,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos],
 .nk-banner-wrap {
   z-index: 5;
   padding: 60px 0px;
-  padding-top: 120px;
   position: relative
 }
 
@@ -36234,7 +36233,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos],
 }
 
 .nk-banner-collab .nk-banner-grids {
-  padding-top: 60px;
   position: relative;
   text-align: center
 }
@@ -45363,9 +45361,9 @@ h6,
   box-shadow: 4px 4px 36px 0px rgba(192, 192, 192, .1607843137), -4px -4px 36px 0px rgba(192, 192, 192, .1215686275);
   height: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  border: 0px solid #faf9ff
+  border: 0px solid #faf9ff;
+  gap: 24px;
 }
 
 .nk-testimonial-card .row {
@@ -45373,22 +45371,18 @@ h6,
 }
 
 .nk-testimonial-brand img {
-  
+  height: 64px;
 }
 
 .nk-testimonial-card-s1 {
-  padding: 0px
-}
-
-@media(min-width: 768px) {
-  .nk-testimonial-card-s1 {
-    padding: 2rem
-  }
+  padding: 24px;
 }
 
 .nk-testimonial-card-s1 .nk-testimonial-cover {
   border-radius: .75rem .75rem 0 0;
-  background-color: #d9ddf7
+  background-color: #d9ddf7;
+  width: 300px;
+  min-width: 300px;
 }
 
 @media(min-width: 1200px) {
@@ -45400,7 +45394,11 @@ h6,
 
 .nk-testimonial-card-s1 .nk-testimonial-content {
   z-index: 1;
-  position: relative
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .nk-testimonial-card-s1 .nk-testimonial-content .nk-testimonial-icon {
@@ -45426,7 +45424,7 @@ h6,
 }
 
 .nk-testimonial-card-s1 .nk-testimonial-content .nk-testimonial-icon .icon {
-  font-size: 5.625rem;
+  font-size: 4.5rem;
   background: linear-gradient(180deg, #653bc8 0%, #8c9bff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0)
@@ -47486,7 +47484,7 @@ h6,
 
 .scroll-top:hover {
   color: #fff;
-  background-color: #6575e0
+  background-color: #744ad7;
 }
 
 .scroll-top.active {
@@ -49477,36 +49475,12 @@ h6,
 }
 
 .nk-testimonial-content h3 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .logos-stores {
-  /* -webkit-mask-image: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(transparent),
-      color-stop(20%, #000),
-      color-stop(80%, #000),
-      to(transparent));
-  -webkit-mask-image: linear-gradient(90deg,
-      transparent,
-      #000 20%,
-      #000 80%,
-      transparent);
-  mask-image: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(transparent),
-      color-stop(20%, #000),
-      color-stop(80%, #000),
-      to(transparent));
-  mask-image: linear-gradient(90deg,
-      transparent,
-      #000 20%,
-      #000 80%,
-      transparent); */
   height: 100%;
-  gap: 25px;
+  gap: 15px;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -49518,7 +49492,7 @@ h6,
   flex-shrink: 0;
   display: flex;
   justify-content: space-around;
-  gap: 25px;
+  gap: 15px;
   min-width: 100%;
   animation: scroll 50s linear infinite;
   -webkit-animation: scroll 50s linear infinite;
@@ -49538,16 +49512,17 @@ h6,
   }
 
   to {
-    transform: translateX(calc(100% - 25px));
-    -webkit-transform: translateX(calc(100% - 25px));
-    -moz-transform: translateX(calc(100% - 25px));
-    -ms-transform: translateX(calc(100% - 25px));
-    -o-transform: translateX(calc(100% - 25px));
+    transform: translateX(calc(100% - 15px));
+    -webkit-transform: translateX(calc(100% - 15px));
+    -moz-transform: translateX(calc(100% - 15px));
+    -ms-transform: translateX(calc(100% - 15px));
+    -o-transform: translateX(calc(100% - 15px));
   }
 }
 
 .logos-stores img {
-  height: 40px;
+  height: 64px;
+  object-fit: contain;
 }
 
 .nk-banner-content .logo {
@@ -49568,14 +49543,14 @@ h6,
   margin-top: 55px;
 }
 
-.list-notes li{
+.list-notes li {
   position: relative;
   width: 100%;
   text-align: center;
   padding-top: 26px;
 }
 
-.list-notes .circle{
+.list-notes .circle {
   display: flex;
   overflow: hidden;
   border-radius: 50%;
@@ -49593,7 +49568,7 @@ h6,
   z-index: 1;
 }
 
-.list-notes .circle::after{
+.list-notes .circle::after {
   content: "";
   border-radius: 50%;
   position: absolute;
@@ -49602,7 +49577,7 @@ h6,
   height: .7rem;
 }
 
-.list-notes li:after{
+.list-notes li:after {
   content: "";
   top: 0;
   right: 0;
@@ -49613,15 +49588,117 @@ h6,
   background-color: #e5e7eb;
 }
 
-.list-notes li h4{
+.list-notes li h4 {
   font-size: 18px;
   padding: 0 20px;
-  letter-spacing: .4px;
+  /* letter-spacing: .1px; */
 }
 
 .list-notes li h4 span {
   display: block;
   color: #643dc6;
+}
+
+.buy-veiw-theme {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  background: #643dc61f;
+  -webkit-backdrop-filter: blur(35px);
+  backdrop-filter: blur(40px);
+  box-shadow: rgba(149, 157, 165, .08) 0 8px 24px;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.buy-veiw-theme .flex-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.buy-veiw-theme .flex-head h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.buy-veiw-theme .flex-head ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buy-veiw-theme .flex-head .btn-head {
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+.buy-veiw-theme.active {
+  animation: mymove 0.3s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes mymove {
+  from {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.call-whatsapp {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 99;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.call-whatsapp a {
+  background: #0b1425;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.call-whatsapp a svg {
+  width: 26px;
+  height: 26px;
+}
+
+.call-whatsapp a.call {
+  background: #057CCC;
+}
+
+.call-whatsapp a.whatsapp {
+  background: #279d53;
+}
+
+.call-whatsapp.hide {
+  display: none !important;
 }
 
 /* abdo */
@@ -49638,6 +49715,27 @@ h6,
 
   .nk-nav-link {
     padding: 18px;
+  }
+
+  .nk-banner-content .logo {
+    height: 42px;
+    margin-bottom: 30px;
+  }
+
+  .nk-month-amount.amount-wrap .amount {
+    font-size: 42px;
+  }
+
+  .nk-month-amount.amount-wrap .amount-text {
+    font-size: 22px;
+  }
+
+  .btn-hero {
+    padding: 9px 40px;
+  }
+
+  .statistics .nk-section-title {
+    text-align: center;
   }
 }
 
