@@ -49590,10 +49590,9 @@ h6,
   right: 0;
   width: 100%;
   z-index: 99;
-  background: #643dc61f;
-  background: -webkit-linear-gradient(right, #643dc62e, #e91e6317, #643dc62e);
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(100px);
+  background: #ebe4ff;
+  background: -webkit-linear-gradient(right, #ebe4ff, #fff3f7, #ebe4ff);
+  box-shadow: rgba(149, 157, 165, .08) 0 8px 24px;
   box-shadow: rgba(149, 157, 165, .08) 0 8px 24px;
   padding: 10px 0;
   opacity: 0;
